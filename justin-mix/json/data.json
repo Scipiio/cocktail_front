@@ -1,0 +1,21 @@
+{
+	"records": [
+		{
+			"id": 0,
+			"name": "Rose Lady",
+			"flavors": ["Sucré","Floral","Onctueux"],
+			"glass": "Coupe",
+			"recipe": ["Blanc d'oeuf","Gin Fraise", "Sirop de grenadine","Crème","Sirop de rose"],
+			"shakeType": "Hard Shake",
+			"ice": "Straight"
+		},{
+			"id": 1,
+			"name": "Candide",
+			"flavors": ["Frais","Épicé","Doux"],
+			"glass": "Rock",
+			"recipe": ["Rhum ambré","Birlou", "Ginger beer","Eau pétillante","Sirop de rose"],
+			"shakeType": "Shake",
+			"ice": "On the rocks"
+		}
+	]
+}

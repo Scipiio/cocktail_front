@@ -1,0 +1,73 @@
+
+.offcanvas {
+	background-color: #1F1A2D !important;
+}
+
+.container {
+	background-color: #1F1A2D;
+
+    padding: 15px;
+	
+	border: 5px ridge;
+	border-color: #161022;
+	border-right-color: #272431;
+	border-bottom-color: #272431;
+}
+
+.list {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.logo {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+    padding: 25px 10px;
+    transform: translateZ(0);
+    object-fit: contain;
+
+}
+
+.logo::before,
+.logo::after {
+content: '';
+position: absolute;
+z-index: -1;
+}
+
+/* Inner BG */
+.logo::after {
+    inset: 0;
+    padding: 1px;
+    background: #1F1A2D;
+    background-clip: content-box;
+  }
+
+/* Fancy animation */
+.logo::before {
+    animation: 7s rotate linear infinite;
+    width: 150%;
+    height: 500%;
+    background: conic-gradient(
+        #ffffff80,
+        #ffffff40,
+        #ffffff30,
+        #ffffff20,
+        #ffffff10,
+        #ffffff10,
+        #ffffff80
+    );
+}
+@keyframes rotate {
+from {
+    transform: rotate(360deg);
+}
+to {
+    transform: rotate(0deg);
+}
+}
+  
